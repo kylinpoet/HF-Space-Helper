@@ -11,13 +11,13 @@ space_list_str = os.environ.get("SPACE_LIST", "")
 space_list = [space.strip() for space in space_list_str.split(",") if space.strip()]
 global_timeout_seconds = int(os.environ.get("GLOBAL_TIMEOUT_SECONDS", 1800))
 repo_id = os.environ.get("GITHUB_REPOSITORY")
-
+headers = {"Authorization": f"Bearer {hf_token}"}
 def check_space_with_browser_emulation(space_name):
     full_space_url = f"https://{username}-{space_name}.hf.space"
     logging.info(f"开始模拟浏览器访问空间: {full_space_url}")
     start_time = time.time()
     try:
-        response = requests.get(full_space_url, timeout=30)
+        response = requests.get(full_space_url, timeout=30, headers=headers)
         response.raise_for_status()
         duration = time.time() - start_time
         logging.info(f"✅空间{space_name}访问正常, 耗时: {duration:.2f}秒")

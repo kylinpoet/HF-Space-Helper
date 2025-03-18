@@ -3,7 +3,7 @@ name: 抱抱脸空间状态检查与自动构建
 on:
   workflow_dispatch:
   schedule:
-    - cron: '12 */6 * * *'
+    - cron: '12 */11 * * *'
 
 env:
   HF_TOKEN: ${{ secrets.HF_TOKEN }}

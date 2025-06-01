@@ -8,7 +8,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 hf_token = os.environ["HF_TOKEN"]
 username = os.environ["USERNAME"]
 space_list_str = os.environ.get("SPACE_LIST", "")
+print(space_list_str)
 space_list = [space.strip() for space in space_list_str.split(",") if space.strip()]
+print(space_list)
 global_timeout_seconds = int(os.environ.get("GLOBAL_TIMEOUT_SECONDS", 1800))
 repo_id = os.environ.get("GITHUB_REPOSITORY")
 headers = {"Authorization": f"Bearer {hf_token}"}

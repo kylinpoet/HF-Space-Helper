@@ -432,3 +432,4 @@
 | [2025-08-07](https://github.com/kylinpoet/HF-Space-Helper/commits/6edf2ace6f6656712bb9c3f0292964fd855c40c9/docs/index.html) |  |
 | [2025-08-07](https://github.com/kylinpoet/HF-Space-Helper/commits/f68711f683c1c4e9b502a3c5abea36d34e9ed343/docs/index.html) |  |
 | [2025-08-07](https://github.com/kylinpoet/HF-Space-Helper/commits/3f2f38f41775e3db44a42aabfc1f3a1732f14de2/docs/index.html) |  |
+| [2025-08-08](https://github.com/kylinpoet/HF-Space-Helper/commits/12a8946e2fc42238ea72320f6fcda3b2a78e25a6/docs/index.html) |  |
